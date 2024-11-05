@@ -1,0 +1,8 @@
+streamlit==1.20.0             # Streamlit for the web application
+python-dotenv==1.0.0          # To load environment variables
+PyPDF2==3.0.0                 # For extracting text from PDF files
+transformers==4.28.1          # Hugging Face Transformers for language models
+torch==2.0.0                  # PyTorch for model support in Hugging Face
+langchain==0.0.204            # LangChain for conversational memory and retrieval
+faiss-cpu==1.7.3              # FAISS for vector storage and similarity search
+openai==0.27.2                # OpenAI API for Whisper and GPT models

@@ -46,17 +46,23 @@
 2. **Vector Storage with FAISS**: Stores embeddings for retrieval.
 3. **Conversational Memory**: Maintains conversation context using LangChain’s `ConversationBufferMemory`.
 
+---
+
+## Project Structure
+
+```plaintext
 PatrioteSN
 │
 ├── main.py                    # Main Streamlit app file
 ├── requirements.txt           # Required Python packages
 ├── .env                       # Environment file for API keys
-├── dossiers                   # Directory for PDF documents
-│   ├── document1.pdf
-│   ├── document2.pdf
-│   └── ...                    # Other PDF files for summarization
+├── dossiers                   # Directory containing uploaded documents
+│   ├── sample_document1.pdf   # Sample PDF files
+│   └── sample_document2.pdf   # Additional documents
 └── README.md                  # Project documentation
+```
 
+---
 
 ## Setup and Installation
 
@@ -119,8 +125,8 @@ The app will open in your default web browser, showing the homepage with navigat
    - **Translate to Wolof**: After receiving a response in French, click "Translate to Wolof" to view the answer in Wolof.
 
 ### 3. **Document Summarization**
-   - **Upload PDF**: Upload one or more PDF files containing legal documents.
-   - **Summarize**: The app will provide a concise summary of each document.
+   - **Upload PDF**: Place PDF files in the `dossiers` folder to be summarized. 
+   - **Summarize**: The app will provide a concise summary of each document uploaded in the `dossiers` folder.
 
 ---
 
@@ -136,7 +142,7 @@ The app will open in your default web browser, showing the homepage with navigat
    - The `translate_to_wolof()` function utilizes the Hugging Face `cifope/nllb-200-wo-fr-distilled-600M` model for French-to-Wolof translation.
 
 4. **PDF Summarization**:
-   - Text is extracted from PDF files using `PyPDF2`, split into chunks, and summarized using OpenAI’s language model.
+   - Text is extracted from PDF files in the `dossiers` folder using `PyPDF2`, split into chunks, and summarized using OpenAI’s language model.
 
 ---
 
@@ -155,6 +161,3 @@ The app will open in your default web browser, showing the homepage with navigat
 - **Language Support Expansion**: Add more languages relevant to Senegal.
 - **Advanced Legal Document Analysis**: Extend summarization with entity extraction and deeper legal insights.
 
----
-
-This README provides a comprehensive guide to understanding, setting up, and running the **PatrioteSN** project. Enjoy exploring the world of legal AI assistance!

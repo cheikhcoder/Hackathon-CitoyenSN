@@ -46,25 +46,17 @@
 2. **Vector Storage with FAISS**: Stores embeddings for retrieval.
 3. **Conversational Memory**: Maintains conversation context using LangChain’s `ConversationBufferMemory`.
 
----
-
-## Project Structure
-
-```plaintext
 PatrioteSN
 │
 ├── main.py                    # Main Streamlit app file
 ├── requirements.txt           # Required Python packages
 ├── .env                       # Environment file for API keys
-├── utils                      # Directory for utility functions
-│   ├── transcribe.py          # Functions for audio transcription
-│   ├── translate.py           # Functions for translation using Hugging Face
-│   ├── summarization.py       # Functions for PDF summarization
-│   └── chatbot.py             # Chatbot setup and responses
+├── dossiers                   # Directory for PDF documents
+│   ├── document1.pdf
+│   ├── document2.pdf
+│   └── ...                    # Other PDF files for summarization
 └── README.md                  # Project documentation
-```
 
----
 
 ## Setup and Installation
 

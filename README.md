@@ -1,7 +1,7 @@
 
-# PatrioteSN - Legal Assistant Chatbot
+# CitoyenSN - Legal Assistant Chatbot
 
-**PatrioteSN** is an interactive legal assistant leveraging artificial intelligence to provide information on Senegalese law. This project includes various functionalities: a multilingual chatbot supporting audio transcription, document summarization, and translation of responses into Wolof.
+**CitoyenSN** is an interactive legal assistant leveraging artificial intelligence to provide information on Senegalese law. This project includes various functionalities: a multilingual chatbot supporting audio transcription, document summarization, and translation of responses into Wolof.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@
 
 ## Project Overview
 
-**PatrioteSN** is designed to assist users in getting quick answers to legal questions related to Senegalese law. The project provides:
+**CitoyenSN** is designed to assist users in getting quick answers to legal questions related to Senegalese law. The project provides:
 
 - **Multilingual Chatbot**: Users can ask legal questions in French, English, Russian, or Wolof, and receive responses in the same language.
 - **Audio Transcription**: Users can upload audio files with questions, which are transcribed to text.
@@ -51,7 +51,7 @@
 ## Project Structure
 
 ```plaintext
-PatrioteSN
+CitoyenSN
 │
 ├── main.py                    # Main Streamlit app file
 ├── requirements.txt           # Required Python packages
@@ -75,8 +75,8 @@ PatrioteSN
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/PatrioteSN.git
-   cd PatrioteSN
+   git clone https://github.com/yourusername/CitoyenSN.git
+   cd CitoyenSN
    ```
 
 2. **Create and Activate a Virtual Environment**
@@ -161,3 +161,6 @@ The app will open in your default web browser, showing the homepage with navigat
 - **Language Support Expansion**: Add more languages relevant to Senegal.
 - **Advanced Legal Document Analysis**: Extend summarization with entity extraction and deeper legal insights.
 
+---
+
+This README provides a comprehensive guide to understanding, setting up, and running the **CitoyenSN** project. Enjoy exploring the world of legal AI assistance!
